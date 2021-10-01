@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<body>
+<link href='./tooltip.css' rel='stylesheet'>
+<div class="back"></div>
+<div class="registration-form">
+  <header>
+    <h1>Easy Sign Up</h1>
+    
+    <p>Hover for more information</p>
+  </header>
+  <form>
+    
+    <div class="input-section email-section">
+      <input class="email" type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/>
+      <div class="animated-button anim"><span class="icon-paper-plane tooltip" data-tooltip="Only Gmail and Outllook"><i class="fa fa-envelope-o"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
+    </div>
+    <div class="input-section username-section folded">
+        <input class="username" type="username" placeholder="ENTER YOUR USERNAME" autocomplete="off"/>
+        <div class="animated-button anim"><span class="icon-username tooltip" data-tooltip="Only alphanumeric"><i class="fa fa-user"></i></span><span class="next-button username"><i class="fa fa-arrow-up"></i></span></div>
+      </div>
+    
+      <div class="input-section birthdate-section folded">
+        <input class="birthdate" type="date" autocomplete="off"/>
+        <div class="animated-button anim"><span class="icon-birthdaycake tooltip" data-tooltip="At least 18 yo"><i class="fa fa-birthday-cake"></i></span><span class="next-button birthdate"><i class="fa fa-arrow-up"></i></span></div>
+      </div>
+
+    <div class="input-section password-section folded">
+      <input class="password" type="password" placeholder="ENTER YOUR PASSWORD HERE"/>
+      <div class="animated-button anim"><span class="icon-lock tooltip"  data-tooltip="At least 8 characters"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+    </div>
+    <div class="input-section repeat-password-section folded">
+      <input class="repeat-password" type="password" placeholder="REPEAT YOUR PASSWORD HERE"/>
+      <div class="animated-button anim"><span class="icon-repeat-lock" data-tooltip="Repeat password"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
+    </div>
+    <div class="success"> 
+      <p>ACCOUNT CREATED</p>
+    </div>
+  </form>
+</div>
+</body>
+<script src="./tooltip.js"></script>
